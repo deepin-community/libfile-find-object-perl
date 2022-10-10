@@ -1,0 +1,29 @@
+Source: libfile-find-object-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Xavier Guimard <yadd@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               libmodule-build-perl
+Build-Depends-Indep: libclass-xsaccessor-perl <!nocheck>,
+                     libfile-treecreate-perl <!nocheck>,
+                     perl
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libfile-find-object-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libfile-find-object-perl.git
+Homepage: https://metacpan.org/release/File-Find-Object
+Rules-Requires-Root: no
+
+Package: libfile-find-object-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libclass-xsaccessor-perl,
+         libfile-treecreate-perl
+Description: object oriented File::Find replacement
+ File::Find::Object does same job as File::Find but works like an object and
+ with an iterator. As File::Find is not object oriented, one can't perform
+ multiple searches in the same application. The second problem of File::Find
+ is its file processing: after starting its main loop, one can't easily wait
+ for another event and so get the next result.

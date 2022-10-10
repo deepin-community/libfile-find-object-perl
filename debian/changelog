@@ -1,0 +1,171 @@
+libfile-find-object-perl (0.3.6-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ gregor herrmann ]
+  * Import upstream version 0.3.6.
+  * Declare compliance with Debian Policy 4.6.0.
+  * New test and runtime dependency: libfile-treecreate-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 29 Sep 2021 15:49:55 +0200
+
+libfile-find-object-perl (0.3.5-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ gregor herrmann ]
+  * Import upstream version 0.3.5.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * debian/watch: use uscan version 4.
+  * Replace tabs with spaces in debian/copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 03 Feb 2020 16:18:14 +0100
+
+libfile-find-object-perl (0.3.4-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Xavier Guimard ]
+  * Email change: Xavier Guimard -> yadd@debian.org
+  * Import upstream version 0.3.4
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 28 Oct 2019 07:25:10 +0100
+
+libfile-find-object-perl (0.3.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Drop debian/TODO which referred to a release test.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 13 Jan 2017 22:14:12 +0100
+
+libfile-find-object-perl (0.3.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Rename autopkgtest configuration file(s) as per new pkg-perl-
+    autopkgtest schema.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Alejandro Garrido Mota from Uploaders. Thanks for your work!
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+
+  * New upstream release.
+  * Drop debian/tests/pkg-perl/smoke-skip. The problematic test is gone.
+  * Drop build dependencies which are not needed any more (author tests).
+  * Declare compliance with Debian Policy 3.9.8.
+  * Bump debhelper compatibility level to 9.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 29 Oct 2016 20:18:10 +0200
+
+libfile-find-object-perl (0.2.13-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * New upstream release 0.2.11.
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * debian/control: update Module::Build dependency.
+
+  * New upstream release 0.2.13.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Remove version from libmodule-build-perl build dependency.
+  * Mark package as autopkgtest-able.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 31 May 2015 17:54:25 +0200
+
+libfile-find-object-perl (0.2.9-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * debian/copyright: fix Upstream-Contact field.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 16 Feb 2014 17:39:41 +0100
+
+libfile-find-object-perl (0.2.8-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Update versioned build dependency on Module::Build.
+  * Add build dependency on libcpan-changes-perl for new test.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 01 Oct 2013 20:12:36 +0200
+
+libfile-find-object-perl (0.2.6-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+  [ Ryan Niebur ]
+  * Email change: Jonathan Yu -> jawnsy@cpan.org
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Jonathan Yu ]
+  * Imported Upstream version 0.2.1
+  * Imported Upstream version 0.2.2
+  * Imported Upstream version 0.2.3
+
+  [ Xavier Guimard ]
+  * Imported Upstream version 0.2.6
+  * Update source format to 3.0 (quilt)
+  * Bump Standards-Version to 3.9.4
+  * Use debhelper 8
+  * Update debian/copyright (years, format, license)
+  * Update debian/rules to use dh
+  * Add libmodule-build-perl in dependencies
+
+ -- Xavier Guimard <x.guimard@free.fr>  Tue, 04 Dec 2012 21:46:40 +0100
+
+libfile-find-object-perl (0.2.1-1) unstable; urgency=low
+
+  * New upstream release
+    -> Some small feature additions, like is_file and is_link
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ gregor herrmann ]
+  * Set Standards-Version to 3.8.2 (no changes).
+
+ -- Jonathan Yu <frequency@cpan.org>  Thu, 18 Jun 2009 16:52:33 -0400
+
+libfile-find-object-perl (0.2.0-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #511421)
+
+ -- Alejandro Garrido Mota <garridomota@gmail.com>  Fri, 13 Mar 2009 21:45:11 -0430
